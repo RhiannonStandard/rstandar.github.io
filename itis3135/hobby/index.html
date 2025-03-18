@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+          font-family: arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #5d3f51;
+          color: #b1a6b5;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #332838;
+            padding: 20px 5px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        
+
+
+        /*nav style*/
+
+        nav {
+            background-color: #332838;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+            
+        }
+
+        nav a {
+            color: #b1a6b5;
+            text-decoration: none;
+            font-size: 16px;
+            transition: transform 0.2s ease;
+        }
+
+        nav a:hover {
+            transform: scale(1.2);
+            color:#8e8492;
+        }
+
+        section {
+            display: none;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .visible {
+            display: block;
+            opacity: 1;
+        }
+
+        section figure img #what {
+            height: auto;
+        }
+
+
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 100%;
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        figure figcaption {
+            display: block;
+            text-align: center;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        #ai img {
+            width: 500px;
+            height: 315px;
+        }
+
+        ul {
+            text-align: left;
+            margin-left: 20px;
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color:#b1a6b5;
+        }
+
+        
+        /*footer style*/
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #221b25;
+            text-align: center;
+            color:#b1a6b5;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Artist Lounge</h1>
+    </header>
+    <main>
+
+        <nav>
+            <a href="#what"><i class="fas fa-home"></i> Home</a> 
+            <a href="#who"><i class="fas fa-user"></i> About</a> 
+            <a href="#when"><i class="fas fa-clock"></i> When</a> 
+            <a href="#where"><i class="fas fa-map-marker-alt"></i> Where</a> 
+            <a href="#how"><i class="fas fa-lightbulb"></i> How</a> 
+            <a href="#why"><i class="fas fa-question-circle"></i> Why</a> 
+            <a href="#ai"><i class="fas fa-robot"></i> AI</a>          
+        </nav>
+
+        <section id="what" class="visible">
+            
+            <h2>Digital Art</h2>
+            <p>Digital art is another form of showing off a person's creativty, except you're doing it digitally.</p>            
+
+            <figure>
+                <img src="images/penelope.jpg" alt="one of my best pieces of art done digitally on my ipad"/>
+                <figcaption>One of my favorite pieces of art that I had drawn digitally on my ipad.</figcaption>
+            </figure>
+            
+        </section>        
+        <section id="who">
+
+            <h2>The Artist</h2>
+            <p>My name is Rhiannon Standard, a programmer who has a passion for drawing.</p>
+            <figure>
+                <img src="images/me.webp" alt="A pictue of me"/>
+                <figcaption>A picture of me.</figcaption>
+            </figure>
+
+        </section>
+        <section id="when">
+
+            <h2>Best time to draw</h2>
+            <p>In my humble opinion, the best time to draw is when the urge is there and the inspiration is knocking on your door. That is truly the peak time to vent out what you envision onto your art platform! Maybe you stumble across pinterest and see references that interest you, this can be done at any time when its convenient.</p>
+            <figure>
+                <img src="images/pinterest.png" alt="screenshot I took of my pinterest refence folder"/>
+                <figcaption>This is a screenshot I took my of my personal pinterest references.</figcaption>
+            </figure>
+
+        </section>
+        <section id="where">
+
+            <h2>Best place to draw?</h2>
+            <p>In your home, at a cafe, outside, any location that gives you the mood you need to properly apply your thoughts to your art program <em>or</em> piece of paper.</p>
+            <figure>
+                <img src="images/where.jpg" alt="A sketch I drew indicating the best drawing locations"/>
+                <figcaption>A sketch I drew indicating the best drawing locations.</figcaption>
+            </figure>
+            
+
+        </section>
+        <section id="how">
+
+            <h2>How to get started?</h2>
+            <p>I first jumped into my art journey by watching various artist content creators on youtube. They teach you everything, mostly for free! It's up to you on whether you want to take a digital or traditional path.</p>
+            <figure>
+                <img src="images/samdoesart.png" alt="a screenshot I took of an artist content creator's youtube."/>
+                <figcaption>A screenshot I took of SamDoesArt on youtube.</figcaption>
+            </figure>
+            
+
+        </section>
+        <section id="why">
+
+            <h2>Why digital art?</h2>
+            <p>Drawing on a digital surface felt more convient and free-flow to me. I didn't have to keep going to michael's to get expensive art supplies to get the look I wanted. It gave me the space to keep trying without expense, that is, after you pay the price for your art medium. The ipad I currently use is a hefty $1000+ but there are definitely cheaper options ranging from $25+</p>
+            <figure>
+                <img src="images/art.webp" alt="Drawing I made on procreate"/>
+                <figcaption>A drawing I made on procreate.</figcaption>
+            </figure>
+
+        </section>
+        <section id="ai">
+
+            <h2>Ai prompts</h2>
+            <p>Below are the prompts I used with AI to help assist me with the hobby site.</p>
+            <ul>
+                <li>
+                    <strong>The prompt used for JS code:</strong><i> "I need functional navbar links to hide the sections that are not active. Show me css or script that can properly hide and show them when clicked and explain how."</i>
+                </li>
+                <li>
+                    <strong>The prompt used for the hover effect:</strong><i> "Show me how I can make my navbar links more stylized, something fun and explain the code."</i>
+                </li>
+                <li>
+                    <strong>The prompt used for the icons:</strong><i> "Show me how I can properly separate my nav links in a creative way."</i>
+                </li>
+            </ul>
+            <figure>
+                <img src="images/aiprompt.jpg" alt="drawing I drew where im asking ai for help"/>
+                <figcaption>Drawing I drew where im asking AI for help.</figcaption>
+            </figure>
+            
+            
+        </section>        
+
+    </main>
+    <footer>
+        <p>Page built by <a href="#">Resilient Sloth Industries</a> &copy; 2025</p>
+    </footer>
+    <script src="hobby.js/main.js"></script>
+</body>
+</html>
