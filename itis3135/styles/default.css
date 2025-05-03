@@ -1,10 +1,51 @@
-body {
-    background-color:navajowhite;
-    text-align: center;
-    color:black;
+/* Updated color palette:
+   Background: #fff9f0 (Soft Cream)
+   Text: #2e2c2f (Deep Charcoal)
+   Link: #3a6b35 (Olive Green)
+   Header/Footer: #a4c3b2 (Dusty Sage)
+*/
+
+/* Sticky footer setup */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff9f0;
+    color: #2e2c2f;
     font-family: monospace, sans-serif;
+    text-align: center;
 }
 
-a{
-    color:darkolivegreen
+a {
+    color: #3a6b35;
+    text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+    color: #2a4f26;
+}
+
+header {
+    background-color: #a4c3b2;
+    padding: 1.2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2e2c2f;
+}
+
+main {
+    flex: 1; /* Fills the space between header and footer */
+    padding: 2rem;
+}
+
+footer {
+    background-color: #a4c3b2;
+    padding: 1.2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2e2c2f;
+}
+
