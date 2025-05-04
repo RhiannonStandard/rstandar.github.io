@@ -10,21 +10,17 @@
   <header>
     <h1>Rhiannon Standard Resilient Sloth | ITIS3135 | Tables</h1>
     <nav>
-        <a href="./index.html">Home</a> 🦥
-        <a href="./introduction/index.html">Introduction</a> 🦥
-        <a href="./Contract/index.html">Contract</a> 🦥
-        <a href="./whimsical/index.html">Whimsical</a> 🦥 
-        <a href="./htmlTables/tables.html">Tables</a> 🦥
-        <a href="./hobby/index.html">Hobby</a> 🦥
-        <a href="./byo/byo_intro.html">BYO</a> 🦥
-        <a href="./project_overview/index.html">Project Overview</a> 🦥
-        <a href="./project/index.html">Project</a>
-      </nav>
-
-      <nav>
-        <a href="./stuff/stuff/">Crappy</a>
-      </nav>
-
+      <a href="../index.html">Home</a> 🦥
+      <a href="../introduction/index.html">Introduction</a> 🦥
+      <a href="../Contract/index.html">Contract</a> 🦥
+      <a href="../whimsical/index.html">Whimsical</a> 🦥 
+      <a href="../htmlTables/tables.html">Tables</a> 🦥
+      <a href="../hobby/index.html">Hobby</a> 🦥
+      <a href="../byo/byo_intro.html">BYO</a> 🦥
+      <a href="../project_overview/index.html">Project Overview</a> 🦥
+      <a href="../project/index.html">Project</a> 🦥
+      <a href="../stuff/stuff/CONTRACT%20%E2%98%B9%20PAGE%20FINAL.html">Crappy</a>
+    </nav>
   </header>
 
   <main>
@@ -43,82 +39,93 @@
 
     <h3>Employee Data in Simple Table</h3>
     <table>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Years of Service</th>
-      </tr>
-      <tr><td>Luna Barkly</td><td>lunaB@dreams.com</td><td>12</td></tr>
-      <tr><td>Bingo Binson</td><td>Binson@gmail.com</td><td>7</td></tr>
-      <tr><td>Gertie Moonsie</td><td>gertie_moon@yahoo.com</td><td>22</td></tr>
-      <tr><td>Ziggy Tree</td><td>ziggy_T@fan.com</td><td>9</td></tr>
-      <tr><td>Mochi Dochi</td><td>mochi_d@woodmail.com</td><td>15</td></tr>
-      <tr><td>Snorbert Yawnson</td><td>snorbert@dreams.com</td><td>2</td></tr>
-      <tr><td>Twiggy Iggy</td><td>twiggy_iggy@yahoo.com</td><td>5</td></tr>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Years of Service</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Luna Barkly</td><td>lunaB@dreams.com</td><td>12</td></tr>
+        <tr><td>Bingo Binson</td><td>Binson@gmail.com</td><td>7</td></tr>
+        <tr><td>Gertie Moonsie</td><td>gertie_moon@yahoo.com</td><td>22</td></tr>
+        <tr><td>Ziggy Tree</td><td>ziggy_T@fan.com</td><td>9</td></tr>
+        <tr><td>Mochi Dochi</td><td>mochi_d@woodmail.com</td><td>15</td></tr>
+        <tr><td>Snorbert Yawnson</td><td>snorbert@dreams.com</td><td>2</td></tr>
+        <tr><td>Twiggy Iggy</td><td>twiggy_iggy@yahoo.com</td><td>5</td></tr>
+      </tbody>
     </table>
 
-   
     <h3>Employee Data in Complex Table</h3>
     <figure>
       <figcaption>Resilient Sloth Naps Employee Information</figcaption>
       <table>
-        <tr>
-          <th>Department</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Years of Service</th>
-          <th>Monthly Salary</th>
-        </tr>
-        <tr>
-          <td rowspan="2">Leadership</td>
-          <td>Luna Branch</td>
-          <td>luna@whimsicalsloth.com</td>
-          <td headers="leadership luna-years">12</td>
-          <td>$6,000</td>
-        </tr>
-        <tr>
-          <td>Gertie Moonslow</td>
-          <td>gertie_sloth@yahoo.com</td>
-          <td headers="leadership gertie-years">22</td>
-          <td>$4,800</td>
-        </tr>
-        <tr>
-          <td rowspan="3">Creative</td>
-          <td>Ziggy Treehug</td>
-          <td>ziggy@treefan.biz</td>
-          <td>9</td>
-          <td>$3,700</td>
-        </tr>
-        <tr>
-          <td>Mochi Driftwood</td>
-          <td>mochi_dw@woodmail.org</td>
-          <td>15</td>
-          <td>$4,000</td>
-        </tr>
-        <tr>
-          <td>Twiggy Napper</td>
-          <td>twiggy_napper@yahoo.com</td>
-          <td>5</td>
-          <td>$3,200</td>
-        </tr>
-        <tr>
-          <td rowspan="2">Support</td>
-          <td>Bingo Pawston</td>
-          <td>pawston@gmail.com</td>
-          <td>7</td>
-          <td>$2,500</td>
-        </tr>
-        <tr>
-          <td>Snorbert Yawnson</td>
-          <td>snorbert@dreams.net</td>
-          <td>2</td>
-          <td>$2,000</td>
-        </tr>
-        <tr>
-          <th colspan="3">Total Years of Service</th>
-          <td>72</td>
-          <td>$26,200</td>
-        </tr>
+        <thead>
+          <tr>
+            <th id="dept">Department</th>
+            <th id="empname">Name</th>
+            <th id="empemail">Email</th>
+            <th id="years">Years of Service</th>
+            <th id="salary">Monthly Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="dept">Leadership</td>
+            <td headers="empname">Luna Branch</td>
+            <td headers="empemail">luna@whimsicalsloth.com</td>
+            <td headers="years">12</td>
+            <td headers="salary">$6,000</td>
+          </tr>
+          <tr>
+            <td headers="dept">Leadership</td>
+            <td headers="empname">Gertie Moonslow</td>
+            <td headers="empemail">gertie_sloth@yahoo.com</td>
+            <td headers="years">22</td>
+            <td headers="salary">$4,800</td>
+          </tr>
+          <tr>
+            <td headers="dept">Creative</td>
+            <td headers="empname">Ziggy Treehug</td>
+            <td headers="empemail">ziggy@treefan.biz</td>
+            <td headers="years">9</td>
+            <td headers="salary">$3,700</td>
+          </tr>
+          <tr>
+            <td headers="dept">Creative</td>
+            <td headers="empname">Mochi Driftwood</td>
+            <td headers="empemail">mochi_dw@woodmail.org</td>
+            <td headers="years">15</td>
+            <td headers="salary">$4,000</td>
+          </tr>
+          <tr>
+            <td headers="dept">Creative</td>
+            <td headers="empname">Twiggy Napper</td>
+            <td headers="empemail">twiggy_napper@yahoo.com</td>
+            <td headers="years">5</td>
+            <td headers="salary">$3,200</td>
+          </tr>
+          <tr>
+            <td headers="dept">Support</td>
+            <td headers="empname">Bingo Pawston</td>
+            <td headers="empemail">pawston@gmail.com</td>
+            <td headers="years">7</td>
+            <td headers="salary">$2,500</td>
+          </tr>
+          <tr>
+            <td headers="dept">Support</td>
+            <td headers="empname">Snorbert Yawnson</td>
+            <td headers="empemail">snorbert@dreams.net</td>
+            <td headers="years">2</td>
+            <td headers="salary">$2,000</td>
+          </tr>
+          <tr>
+            <th colspan="3">Total Years of Service</th>
+            <td>72</td>
+            <td>$26,200</td>
+          </tr>
+        </tbody>
       </table>
     </figure>
   </main>
@@ -131,14 +138,12 @@
       <a href="https://www.freecodecamp.org/RhiannonStandard">freeCodeCamp</a> 🦥
       <a href="https://www.codecademy.com/profiles/RhiannonStandard">Codecademy</a> 🦥
       <a href="https://www.linkedin.com/in/rhiannon-standard-376a2a266/">LinkedIn</a>
-  </nav>
-
-  <p>
+    </nav>
+    <p>
       Page built by <a href="#">Standard Enterprise</a>, 
       <em><a href="https://www.freecodecamp.org/certification/RhiannonStandard/responsive-web-design" target="_blank">Certified in Responsive Web Design</a></em> 
       &copy; 2025
     </p>
   </footer>
-  
 </body>
 </html>
