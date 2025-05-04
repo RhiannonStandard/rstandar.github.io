@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio | Karl Starkey Photography</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -23,15 +23,61 @@
   </header>
 
   <main>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>Browse a selection of featured works showcasing portraits, weddings, events, and creative projects.</p>
-      <img class="placeholder" src="[Insert Portfolio Image URL]" alt="Portfolio gallery">
+    <section class="gallery">
+      <figure>
+        <img src="./images/Estelle-line-3.jpg" alt="Caught between shadow and self" class="gallery-img" />
+        <figcaption>Caught between shadow and self</figcaption>
+      </figure>
+      <figure>
+        <img src="./images/DSC00185-Pano-Edit-link.jpg" alt="Elegance engineered" class="gallery-img" />
+        <figcaption>Elegance engineered</figcaption>
+      </figure>
+      <figure>
+        <img src="./images/DSC00124-Edit.jpg" alt="Framed by silence, lit by presence" class="gallery-img" />
+        <figcaption>Framed by silence, lit by presence</figcaption>
+      </figure>
+      <figure>
+      <figure>
+        <img src="./images/Hannah-10.jpg" alt="Aerial Shot" class="gallery-img" />
+        <figcaption>Aerial Shot</figcaption>
+      </figure>
+        <img src="./images/DSC00157.jpg" alt="Natural light" class="gallery-img" />
+        <figcaption>Natural light</figcaption>
+      </figure>
+      <figure>
+        <img src="./images/Herbie (15).jpg" alt="The world fades, thought remains" class="gallery-img" />
+        <figcaption>The world fades, thought remains</figcaption>
+      </figure>
+      <figure>
+        <img src="./images/DSC09440-Edit.jpg" alt="Drive defines him" class="gallery-img" />
+        <figcaption>Drive defines him</figcaption>
+      </figure>
+      <figure>
+        <img src="./images/Elliot Car-2.jpg" alt="In Motion" class="gallery-img" />
+        <figcaption>In Motion</figcaption>
+      </figure>
+      <figure>
+        <img src="./images/Untitled-Session1190-Edit.jpg" alt="Poised" class="gallery-img" />
+        <figcaption>Poised</figcaption>
+      </figure>
+      <figure>
+        <img src="./images/Untitled-Session2420-Edit.jpg" alt="At the center" class="gallery-img" />
+        <figcaption>At the center</figcaption>
+      </figure>
     </section>
+
+    
+    <div id="imgModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="modalCaption"></div>
+    </div>
   </main>
 
   <footer>
-    <p>Resilient Sloth Industries. All rights reserved. &copy; 2025</p>
+    <p>Page built by <a href="#">Standard Enterprise &copy; 2025</p>
+
   </footer>
+  
 </body>
 </html>

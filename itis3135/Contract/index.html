@@ -14,7 +14,7 @@
       flex-direction: column;
       min-height: 100vh;
     }
-
+  
     header, footer {
       background-color: #a4c3b2;
       color: #2e2c2f;
@@ -22,18 +22,18 @@
       text-align: center;
       font-weight: bold;
     }
-
+  
     header h1 {
       font-size: 1.6rem;
       margin: 0;
     }
-
+  
     h2 {
       text-align: center;
       margin-top: 2rem;
       font-size: 1.4rem;
     }
-
+  
     main {
       flex: 1;
       display: flex;
@@ -41,7 +41,7 @@
       align-items: center;
       padding: 2rem;
     }
-
+  
     .contract-box {
       background-color: #ffffff;
       border: 2px solid #a4c3b2;
@@ -52,26 +52,90 @@
       line-height: 1.6;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
-
+  
     .contract-box p {
       margin-bottom: 1.5rem;
     }
-
+  
     .signature {
       margin-top: 2rem;
     }
-
+  
     .signature strong {
       display: block;
       margin-top: 0.5rem;
     }
+  
+    /* Phones (up to 600px) */
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+  
+      main {
+        padding: 1rem;
+      }
+  
+      .contract-box {
+        padding: 1rem;
+        width: 100%;
+        border-radius: 6px;
+      }
+  
+      header h1 {
+        font-size: 1.3rem;
+      }
+  
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  
+    /* Tablets (601px–960px) */
+    @media (min-width: 601px) and (max-width: 960px) {
+      body {
+        font-size: 15px;
+      }
+  
+      main {
+        padding: 1.5rem;
+      }
+  
+      .contract-box {
+        padding: 1.5rem;
+        width: 95%;
+      }
+  
+      header h1 {
+        font-size: 1.4rem;
+      }
+  
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+  
+    /* Laptops (961px–1400px) */
+    @media (min-width: 961px) and (max-width: 1400px) {
+      body {
+        font-size: 16px;
+      }
+  
+      main {
+        padding: 2rem;
+      }
+  
+      .contract-box {
+        padding: 2rem;
+      }
+    }
   </style>
+  
 </head>
 <body>
 
   <header>
-    <h1>Rhiannon Standard Resilient Sloth | ITIS3135 | Contract</h1>
-  </header>
+    <div data-include="../components/header.html"></div>  </header>
 
   <h2>Contract Agreement</h2>
 
@@ -106,8 +170,8 @@
   </main>
 
   <footer>
-    <p>Page built by <a href="#">Standard Enterprise</a>
-        &copy; 2025</p>  </footer>
-
+    <div data-include="../components/footer.html"></div> 
+  </footer>
+  <script src="../scripts/HTMLInclude.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Build Your Own Intro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="survey.js" defer></script>
+</head>
+<body>
+  <header>
+    <div data-include="../components/header.html"></div>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2 id="formHeading">Build Your Own Intro Page</h2>
+
+      <form id="introForm">
+        <label>Name:
+          <input type="text" id="name" required placeholder="Your full name" />
+        </label>
+
+        <label>Mascot:
+          <input type="text" id="mascot" required placeholder="e.g. Resilient Sloth" />
+        </label>
+
+        <label>Upload Image:
+          <input type="file" id="image" accept="image/png, image/jpeg" required />
+        </label>
+
+        <label>Image Caption:
+          <input type="text" id="imgCaption" required placeholder="Describe the image" />
+        </label>
+
+        <label>Personal Background:
+          <textarea id="personalBg" required></textarea>
+        </label>
+
+        <label>Professional Background:
+          <textarea id="professionalBg" required></textarea>
+        </label>
+
+        <label>Academic Background:
+          <textarea id="academicBg" required></textarea>
+        </label>
+
+        <label>Programming Background:
+          <textarea id="webBg" required></textarea>
+        </label>
+
+        <label>Primary Computer Platform:
+          <input type="text" id="platform" required />
+        </label>
+
+        <div id="courses">
+          <label>Courses Currently Taking:</label>
+          <div id="courseInputs">
+            <input type="text" class="course-input" placeholder="Course name" />
+          </div>
+          <button type="button" onclick="addCourse()">Add Course</button>
+          <button type="button" onclick="removeCourse()">Remove Last</button>
+        </div>
+
+        <label>Funny Thing?
+          <input type="text" id="funny" placeholder="Say something funny that happened to you!" />
+        </label>
+
+        <label>Anything Else?
+          <input type="text" id="extra" placeholder="Anything else you'd like to share?" />
+        </label>
+
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="agreement" required />
+          <label for="agreement" class="checkbox-text">
+            I understand that this page is not password protected, and I will not put anything here that I don’t want publicly available.
+          </label>
+        </div>
+
+        <div class="form-controls">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+
+      <div id="introResult"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div data-include="../components/footer.html"></div>
+  </footer>
+  <script src="../scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Html - Employee Tables</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div data-include="../components/header.html"></div>
+
+  </header>
+
+  <main>
+    <h2>Employee Tables</h2>
+
+    <h3>My Tabular Data</h3>
+    <ol>
+      <li>Luna Barkly – lunaB@dreams.com – 12</li>
+      <li>Bingo Binson – Binston@gmail.com – 7</li>
+      <li>Gertie Moonsie – gertie_Moon@yahoo.com – 22</li>
+      <li>Ziggy Tree – ziggy_T@fan.com – 9</li>
+      <li>Mochi Dochi – mochi_d@woodmail.com – 15</li>
+      <li>Snorbert Yawnson – snorbert@dreams.com – 2</li>
+      <li>Twiggy Iggy – twiggy_iggy@yahoo.com – 5</li>
+    </ol>
+
+    <h3>Employee Data in Simple Table</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Years of Service</th>
+      </tr>
+      <tr><td>Luna Barkly</td><td>lunaB@dreams.com</td><td>12</td></tr>
+      <tr><td>Bingo Binson</td><td>Binson@gmail.com</td><td>7</td></tr>
+      <tr><td>Gertie Moonsie</td><td>gertie_moon@yahoo.com</td><td>22</td></tr>
+      <tr><td>Ziggy Tree</td><td>ziggy_T@fan.com</td><td>9</td></tr>
+      <tr><td>Mochi Dochi</td><td>mochi_d@woodmail.com</td><td>15</td></tr>
+      <tr><td>Snorbert Yawnson</td><td>snorbert@dreams.com</td><td>2</td></tr>
+      <tr><td>Twiggy Iggy</td><td>twiggy_iggy@yahoo.com</td><td>5</td></tr>
+    </table>
+
+   
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+      <figcaption>Resilient Sloth Naps Employee Information</figcaption>
+      <table>
+        <tr>
+          <th>Department</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Years of Service</th>
+          <th>Monthly Salary</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Leadership</td>
+          <td>Luna Branch</td>
+          <td>luna@whimsicalsloth.com</td>
+          <td headers="leadership luna-years">12</td>
+          <td>$6,000</td>
+        </tr>
+        <tr>
+          <td>Gertie Moonslow</td>
+          <td>gertie_sloth@yahoo.com</td>
+          <td headers="leadership gertie-years">22</td>
+          <td>$4,800</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Creative</td>
+          <td>Ziggy Treehug</td>
+          <td>ziggy@treefan.biz</td>
+          <td>9</td>
+          <td>$3,700</td>
+        </tr>
+        <tr>
+          <td>Mochi Driftwood</td>
+          <td>mochi_dw@woodmail.org</td>
+          <td>15</td>
+          <td>$4,000</td>
+        </tr>
+        <tr>
+          <td>Twiggy Napper</td>
+          <td>twiggy_napper@yahoo.com</td>
+          <td>5</td>
+          <td>$3,200</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Support</td>
+          <td>Bingo Pawston</td>
+          <td>pawston@gmail.com</td>
+          <td>7</td>
+          <td>$2,500</td>
+        </tr>
+        <tr>
+          <td>Snorbert Yawnson</td>
+          <td>snorbert@dreams.net</td>
+          <td>2</td>
+          <td>$2,000</td>
+        </tr>
+        <tr>
+          <th colspan="3">Total Years of Service</th>
+          <td>72</td>
+          <td>$26,200</td>
+        </tr>
+      </table>
+    </figure>
+  </main>
+
+  <footer>
+    <div data-include="../components/footer.html"></div>
+  </footer>
+  <script src="../scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

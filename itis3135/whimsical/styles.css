@@ -1,38 +1,91 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4fff4;
-    margin: 0;
-    padding: 0;
-    color: #2e3d2f;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4fff4;
+  color: #2e3d2f;
+}
+
+header, footer {
+  background-color: #a3d5a3;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #2e3d2f;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  flex: 1;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+/* Phones (up to 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
   }
-  
-  header, footer {
-    background-color: #a3d5a3;
-    text-align: center;
-    padding: 1rem 0;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
   }
-  
+
   nav a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #2e3d2f;
-    font-weight: bold;
+    margin: 0;
   }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
+
   main {
-    padding: 2rem;
-    max-width: 700px;
-    margin: auto;
+    padding: 1rem;
+    width: 95%;
   }
-  
-  .tagline {
-    font-style: italic;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    color: #444;
+}
+
+/* Tablets (601px to 960px) */
+@media (min-width: 601px) and (max-width: 960px) {
+  body {
+    font-size: 16px;
   }
-  
+
+  main {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+  }
+}
+
+/* Laptops (961px to 1400px) */
+@media (min-width: 961px) and (max-width: 1400px) {
+  body {
+    font-size: 17px;
+  }
+
+  main {
+    width: 85%;
+  }
+}
