@@ -3,19 +3,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultDiv = document.getElementById("introResult");
   const heading = document.getElementById("formHeading");
 
-  form.addEventListener("submit", function (e) {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const file = document.getElementById("image").files[0];
+    const fileInput = document.getElementById("image");
+    const file = fileInput.files[0];
+
     if (!file || !/\.(jpe?g|png)$/i.test(file.name)) {
       alert("Please upload a valid PNG or JPG image.");
       return;
     }
 
     const reader = new FileReader();
-    reader.onload = function (event) {
-      const imageDataURL = event.target.result;
+    reader.onload = (event) => {
+      const imageSrc = event.target.result;
 
+      
       const name = document.getElementById("name").value;
       const mascot = document.getElementById("mascot").value;
       const caption = document.getElementById("imgCaption").value;
@@ -26,15 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const platform = document.getElementById("platform").value;
       const funny = document.getElementById("funny").value;
       const extra = document.getElementById("extra").value;
-      const courses = Array.from(document.querySelectorAll(".course-input"))
-        .map(input => input.value.trim())
-        .filter(val => val !== "");
 
+      const courses = Array.from(document.querySelectorAll(".course-input"))
+        .map((input) => input.value.trim())
+        .filter((val) => val !== "");
+
+      
       let html = `
         <div class="content">
           <h2>Introduction</h2>
           <div class="subtitle">${name} | ${mascot}</div>
-          <img src="${imageDataURL}" alt="Photo of ${name}" class="profile-img">
+          <img src="${imageSrc}" alt="Photo of ${name}" class="profile-img">
           <div class="img-caption">${caption}</div>
           <p><strong>Personal background:</strong> ${personal}</p>
           <p><strong>Professional background:</strong> ${professional}</p>
@@ -42,15 +47,21 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Programming Software Background:</strong> ${web}</p>
           <p><strong>Primary Computer Platform:</strong> ${platform}</p>`;
 
-      if (courses.length) {
+      if (courses.length > 0) {
         html += `<p><strong>Courses I'm in & Why:</strong><br>${courses.join(", ")}</p>`;
       }
 
-      if (funny) html += `<p><strong>Funny/Interesting Item:</strong> ${funny}</p>`;
-      if (extra) html += `<p><strong>Just for fun:</strong> ${extra}</p>`;
+      if (funny) {
+        html += `<p><strong>Funny/Interesting Item:</strong> ${funny}</p>`;
+      }
+
+      if (extra) {
+        html += `<p><strong>Just for fun:</strong> ${extra}</p>`;
+      }
 
       html += `</div>`;
 
+    
       form.style.display = "none";
       heading.style.display = "none";
       resultDiv.innerHTML = html;
@@ -60,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
 function addCourse() {
   const container = document.getElementById("courseInputs");
   const input = document.createElement("input");
@@ -68,6 +80,7 @@ function addCourse() {
   input.placeholder = "Course name";
   container.appendChild(input);
 }
+
 
 function removeCourse() {
   const container = document.getElementById("courseInputs");

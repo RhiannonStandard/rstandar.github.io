@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
   const toggleButton = document.getElementById('mode-toggle');
-  toggleButton.addEventListener('click', () => {
+  toggleButton.addEventListener('click', function () {
     document.body.classList.toggle('dark-mode');
   });
 
@@ -9,19 +9,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const captionText = document.getElementById("modalCaption");
   const closeBtn = document.querySelector(".close");
 
-  document.querySelectorAll(".gallery img").forEach(img => {
-    img.addEventListener("click", () => {
-      modal.style.display = "flex";
-      modalImg.src = img.src;
-      captionText.textContent = img.alt || img.nextElementSibling?.textContent || '';
-    });
-  });
+  const galleryImages = document.querySelectorAll(".gallery img");
 
-  closeBtn.addEventListener("click", () => {
+  for (let i = 0; i < galleryImages.length; i++) {
+    galleryImages[i].addEventListener("click", function () {
+      modal.style.display = "flex";
+      modalImg.src = this.src;
+
+      const nextElem = this.nextElementSibling;
+      if (this.alt) {
+        captionText.textContent = this.alt;
+      } else if (nextElem && nextElem.tagName.toLowerCase() === "figcaption") {
+        captionText.textContent = nextElem.textContent;
+      } else {
+        captionText.textContent = "";
+      }
+    });
+  }
+
+  closeBtn.addEventListener("click", function () {
     modal.style.display = "none";
   });
 
-  window.addEventListener("click", (e) => {
+  window.addEventListener("click", function (e) {
     if (e.target === modal) {
       modal.style.display = "none";
     }
