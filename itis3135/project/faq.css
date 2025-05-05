@@ -1,0 +1,65 @@
+/* Base Theme Variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #4a90e2;
+    --link-color: #4a90e2;
+    --faq-bg: #f9f9f9;
+    --faq-border: #dddddd;
+  }
+  
+  /* Dark Theme Overrides */
+  html.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --accent-color: #8bb6ff;
+    --link-color: #8bb6ff;
+    --faq-bg: #1e1e1e;
+    --faq-border: #333333;
+  }
+  
+  /* Apply Theme Variables */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* FAQ Section Styling */
+  #faq {
+    padding: 2rem 1rem;
+    background-color: var(--faq-bg);
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid var(--faq-border);
+    padding: 1rem 0;
+  }
+  
+  .faq-question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+  }
+  
+  .faq-answer {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  
+  .faq-answer a {
+    color: var(--link-color);
+    text-decoration: underline;
+  }
+  
+  .faq-answer a:hover {
+    text-decoration: none;
+  }
+  

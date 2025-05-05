@@ -2,190 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Karl Starkey Photography</title>
-  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="portfolio.css" />
   <script src="script.js" defer></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="portfolio-page">
   <header>
     <div class="logo">
       <h1>Karl Starkey Photography</h1>
     </div>
     <nav class="navbar">
-      <a href="./index.html">Home</a>
+      <a href="index.html">Overview</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="retouching.html">Retouching</a>
-      <a href="contact.html">Contact/About</a>
+      <a href="contact.html">Contact</a>
       <a href="faq.html">FAQ</a>
       <button id="mode-toggle">Toggle Mode</button>
     </nav>
   </header>
 
   <main>
-    <section class="gallery">
-      <figure>
-        <img 
-          src="./images/Estelle-line-3.jpg" 
-          srcset="
-            ./images/Estelle-line-3-small.jpg 480w,
-            ./images/Estelle-line-3-medium.jpg 800w,
-            ./images/Estelle-line-3.jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="Caught between shadow and self"
-          class="gallery-img"
-        />
-        <figcaption>Caught between shadow and self</figcaption>
-      </figure>
-    
-      <figure>
-        <img 
-          src="./images/DSC00185-Pano-Edit-link.jpg" 
-          srcset="
-            ./images/DSC00185-Pano-Edit-link-small.jpg 480w,
-            ./images/DSC00185-Pano-Edit-link-medium.jpg 800w,
-            ./images/DSC00185-Pano-Edit-link.jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="Elegance engineered"
-          class="gallery-img"
-        />
-        <figcaption>Elegance engineered</figcaption>
-      </figure>
-    
-      <figure>
-        <img 
-          src="./images/DSC00124-Edit.jpg" 
-          srcset="
-            ./images/DSC00124-Edit-small.jpg 480w,
-            ./images/DSC00124-Edit-medium.jpg 800w,
-            ./images/DSC00124-Edit.jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="Framed by silence, lit by presence"
-          class="gallery-img"
-        />
-        <figcaption>Framed by silence, lit by presence</figcaption>
-      </figure>
-    
-      <figure>
-        <img 
-          src="./images/Hannah-10.jpg" 
-          srcset="
-            ./images/Hannah-10-small.jpg 480w,
-            ./images/Hannah-10-medium.jpg 800w,
-            ./images/Hannah-10.jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="Aerial Shot"
-          class="gallery-img"
-        />
-        <figcaption>Aerial Shot</figcaption>
-      </figure>
-    
-      <figure>
-        <img 
-          src="./images/DSC00157.jpg" 
-          srcset="
-            ./images/DSC00157-small.jpg 480w,
-            ./images/DSC00157-medium.jpg 800w,
-            ./images/DSC00157.jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="Natural light"
-          class="gallery-img"
-        />
-        <figcaption>Natural light</figcaption>
-      </figure>
-    
-      <figure>
-        <img 
-          src="./images/Herbie (15).jpg" 
-          srcset="
-            ./images/Herbie (15)-small.jpg 480w,
-            ./images/Herbie (15)-medium.jpg 800w,
-            ./images/Herbie (15).jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="The world fades, thought remains"
-          class="gallery-img"
-        />
-        <figcaption>The world fades, thought remains</figcaption>
-      </figure>
-    
-      <figure>
-        <img 
-          src="./images/DSC09440-Edit.jpg" 
-          srcset="
-            ./images/DSC09440-Edit-small.jpg 480w,
-            ./images/DSC09440-Edit-medium.jpg 800w,
-            ./images/DSC09440-Edit.jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="Drive defines him"
-          class="gallery-img"
-        />
-        <figcaption>Drive defines him</figcaption>
-      </figure>
-    
-      <figure>
-        <img 
-          src="./images/Elliot Car-2.jpg" 
-          srcset="
-            ./images/Elliot Car-2-small.jpg 480w,
-            ./images/Elliot Car-2-medium.jpg 800w,
-            ./images/Elliot Car-2.jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="In Motion"
-          class="gallery-img"
-        />
-        <figcaption>In Motion</figcaption>
-      </figure>
-    
-      <figure>
-        <img 
-          src="./images/Untitled-Session1190-Edit.jpg" 
-          srcset="
-            ./images/Untitled-Session1190-Edit-small.jpg 480w,
-            ./images/Untitled-Session1190-Edit-medium.jpg 800w,
-            ./images/Untitled-Session1190-Edit.jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="Poised"
-          class="gallery-img"
-        />
-        <figcaption>Poised</figcaption>
-      </figure>
-    
-      <figure>
-        <img 
-          src="./images/Untitled-Session2420-Edit.jpg" 
-          srcset="
-            ./images/Untitled-Session2420-Edit-small.jpg 480w,
-            ./images/Untitled-Session2420-Edit-medium.jpg 800w,
-            ./images/Untitled-Session2420-Edit.jpg 1200w
-          "
-          sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-          alt="At the center"
-          class="gallery-img"
-        />
-        <figcaption>At the center</figcaption>
-      </figure>
-    </section>
-    
+    <h2 class="section-title">Photography Portfolio</h2>
+    <p class="intro-text">
+    Explore a curated selection of Karl Starkey's work — a blend of artistic composition and authentic moments.
+    </p>
+    <div class="gallery">
 
-    <div id="imgModal" class="modal">
-      <span class="close">×</span>
-      <img class="modal-content" id="modalImage" src="#" alt="Enlarged view" />
-      <div id="modalCaption"></div>
-    </div>
+        <figure>
+          <img src="./images/Estelle-line-3.jpg" alt="Caught between shadow and self" class="gallery-img">
+          <figcaption>Caught between shadow and self</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/DSC00185-Pano-Edit-link.jpg" alt="Elegance engineered" class="gallery-img">
+          <figcaption>Elegance engineered</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/DSC00124-Edit.jpg" alt="Framed by silence, lit by presence" class="gallery-img">
+          <figcaption>Framed by silence, lit by presence</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/Hannah-10.jpg" alt="Aerial Shot" class="gallery-img">
+          <figcaption>Aerial Shot</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/DSC00157.jpg" alt="Natural light" class="gallery-img">
+          <figcaption>Natural light</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/Herbie(15).jpg" alt="The world fades, thought remains" class="gallery-img">
+          <figcaption>The world fades, thought remains</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/DSC09440-Edit.jpg" alt="Drive defines him" class="gallery-img">
+          <figcaption>Drive defines him</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/Elliot-Car-2.jpg" alt="In Motion" class="gallery-img">
+          <figcaption>In Motion</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/Untitled-Session1190-Edit.jpg" alt="Poised" class="gallery-img">
+          <figcaption>Poised</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/Untitled-Session2420-Edit.jpg" alt="At the center" class="gallery-img">
+          <figcaption>At the center</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    
+<!-- Modal -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage" src="#" alt="Enlarged View" />
+  <div id="modalCaption"></div>
+</div>
+
+
   </main>
 
   <footer>
-    <p>Page built by <a href="#">Standard Enterprise</a> © 2025</p>
+    <p>Page built by <a href="#">Standard Enterprise</a> &copy; 2025</p>
   </footer>
 </body>
 </html>

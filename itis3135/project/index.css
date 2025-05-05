@@ -1,0 +1,45 @@
+/* Hero Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    
+  }
+  
+  #home .home-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  #home h2 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 1rem;
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  #home .placeholder {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #home h2 {
+      font-size: 2rem;
+    }
+  
+    #home p {
+      font-size: 1rem;
+    }
+
+}
